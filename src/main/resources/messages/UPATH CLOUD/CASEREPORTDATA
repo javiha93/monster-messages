@@ -1,0 +1,46 @@
+## CASE REPORT DATA
+
+<SOAP path="/csp/conn/ws.ext.UpathCloud.UpathCloudToVCWebServiceSoap.cls"
+      action="caseReportData"
+      apiKeyName="X-NAVIFY-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.virtuoso.ventana.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <caseReportData>
+        <accessionNumber>TEST</accessionNumber>
+        <allSlideReportData>
+          <analysisData>
+            <algorithmId>1</algorithmId>
+            <keyParameterName>KP1</keyParameterName>
+            <parameterGroup>
+              <groupName>G1</groupName>
+              <parameterGroups/>
+              <parameters>
+                <parameterName>PN1</parameterName>
+                <parameterValue>PV1</parameterValue>
+              </parameters>
+            </parameterGroup>
+            <qualitativeResult>GUD</qualitativeResult>
+            <quantitativeResult>2</quantitativeResult>
+            <referenceRanges>
+              <category>CAT SLIDE 1</category>
+              <color>FFEE</color>
+              <operator>OPERATOR SLIDE 1</operator>
+              <value1>VALUE 1 SLIDE 1</value1>
+              <value2>VALUE 2 SLIDE 1</value2>
+            </referenceRanges>
+          </analysisData>
+          <fovId>546789092LIJSDFIOD</fovId>
+          <fovImage>/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSgBBwcHCggKEwoKEygaFhooKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKP/AABEICvgMkAMBIgACEQEDEQH/xADZAAEAAwEBAQEBAAAAAAAAAAAABQYHCAQDAgEQAQABAwECAxEJDAYHBQYBDQABAgMEBQYRBxIhExQVFjE1QVFUcnORkpOxstEIFzZTVWFxgdIiMjM0N1JWdJShs8FCdYKio8IjYoOElcPhRmWk0+IkQ0RFZLTwJThj8YUYJmbjJ0eGxAEBAQADAQEBAAAAAAAAAAAAAAEEBQYDAgcRAQABAgMCCwYFBAIDAQEBAAABAgMEBRFRUhITFBUhMUFxkaGxMjM0YXKBU8HR4fAiQmKikvEGQ4IjY9L/2gAMAwEAAhEDEQA/AOqQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</fovImage>
+          <imageUrl>www.example.com</imageUrl>
+          <slideLabelId>TEST;A;1;1</slideLabelId>
+          <isExcluded>false</isExcluded>
+          <slideNote>The slide note</slideNote>
+          <fovNote>The fov note</fovNote>
+        </allSlideReportData>
+        <caseNote>Case note</caseNote>
+      </caseReportData>
+   </soapenv:Body>
+</soapenv:Envelope>
+</SOAP>

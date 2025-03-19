@@ -1,0 +1,14 @@
+## UPDATE SLIDE
+
+<SOAP path="/csp/conn/ws.ext.DP600.DP600ToVCWebServiceSoap.CLS"
+      action="sendUpdatedSlideStatus">
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.dp600.ventana.com/">
+    <soapenv:Header/>
+    <soapenv:Body>
+      <web:sendUpdatedSlideStatus>
+        <arg0>TEST;A;1;1</arg0>
+        <arg1>SCANNED</arg1>
+      </web:sendUpdatedSlideStatus>
+    </soapenv:Body>
+    </soapenv:Envelope>
+</SOAP>

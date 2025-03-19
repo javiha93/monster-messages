@@ -1,0 +1,15 @@
+
+## SEND SCANNED
+
+<SOAP path="/csp/conn/ws.ext.UpathCloud.UpathCloudToVCWebServiceSoap.CLS"
+      action="sendScannedSlideImageLabelId"
+      apiKeyName="X-NAVIFY-VCONNECT-APIKEY" apiKeyValue="PruebaAPIKey1">
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.virtuoso.ventana.com/">
+       <soapenv:Header/>
+       <soapenv:Body>
+          <web:sendScannedSlideImageLabelId>
+             <arg0>TEST;A;1;1</arg0>
+          </web:sendScannedSlideImageLabelId>
+       </soapenv:Body>
+    </soapenv:Envelope>
+</SOAP>

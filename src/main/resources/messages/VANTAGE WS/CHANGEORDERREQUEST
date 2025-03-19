@@ -1,0 +1,77 @@
+## PROCESS CHANGE ORDER REQUEST
+
+<SOAP path="/csp/conn/ws.ext.VANTAGEWS.VANTAGEWSToVCService.cls"
+      action="ProcessChangeOrderRequest"
+      apiKeyName="X-VANTAGE-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+    <SOAP-ENV:Body>
+        <ProcessChangeOrderRequest xmlns="http://ventanamed.com/vantage/ventanaconnect">
+
+            <s01:labOrder xmlns="http://schemas.datacontract.org/2004/07/VTGVC.Common.DataContract" xmlns:s01="http://ventanamed.com/vantage/ventanaconnect" xmlns:s02="http://schemas.datacontract.org/2004/07/VTGVC.Common.DataContract" xsi:type="s02:LabOrder">
+                <CaseId xsi:type="s:string">TEST</CaseId>
+<!--
+##                   Tagged as Urgent
+-->
+                <IsUrgent xsi:type="s:boolean">true</IsUrgent>
+
+                <Patient xsi:type="s02:Patient">
+                    <DateofBirth xsi:type="s:dateTime">1980-01-01T00:00:00Z</DateofBirth>
+                    <FirstName xsi:type="s:string">John</FirstName>
+                    <Gender xsi:type="s02:Gender">M</Gender>
+                    <LastName xsi:type="s:string">Smith</LastName>
+                    <MiddleName xsi:type="s:string">P</MiddleName>
+                    <PatientId xsi:type="s:string">0001</PatientId>
+                    <Suffix xsi:type="s:string">Mr</Suffix>
+                </Patient>
+                <RequestingPhysician xsi:type="s02:RequestingPhysician">
+                    <Code xsi:type="s:string">MB1</Code>
+                    <FirstName xsi:type="s:string">Jane</FirstName>
+                    <LastName xsi:type="s:string">Doe</LastName>
+                    <MiddleName xsi:type="s:string">H</MiddleName>
+                    <Suffix xsi:type="s:string">Dr</Suffix>
+                </RequestingPhysician>
+                <SendingApplication xsi:type="s:string">LIS_HL7</SendingApplication>
+                <StainOrders>
+                    <StainOrder xsi:type="s02:StainOrder">
+                        <Block xsi:type="s02:Block">
+                            <Barcode xsi:type="s:string">TEST;A;1</Barcode>
+                            <Sequence xsi:type="s:string">1</Sequence>
+                            <TissueSubTypeDescription xsi:type="s:string">Left Liver</TissueSubTypeDescription>
+                            <TissueSubTypeName xsi:type="s:string">Left</TissueSubTypeName>
+                        </Block>
+                        <ReceivedDateTime xsi:type="s:dateTime">2021-03-30T13:04:00Z</ReceivedDateTime>
+                        <Slide xsi:type="s02:Slide">
+                            <Barcode xsi:type="s:string">TEST;A;1;1</Barcode>
+                            <Sequence xsi:type="s:string">1</Sequence>
+                            <StainProtocol xsi:type="s02:StainProtocol">
+                                <ProtocolDescription xsi:type="s:string">HE Initial</ProtocolDescription>
+                                <ProtocolName xsi:type="s:string">HnE</ProtocolName>
+                                <ProtocolNumber xsi:type="s:string">999</ProtocolNumber>
+                            </StainProtocol>
+                        </Slide>
+                        <Specimen xsi:type="s02:Specimen">
+                            <Barcode xsi:type="s:string">TEST;A</Barcode>
+                            <Sequence xsi:type="s:string">A</Sequence>
+                            <SurgicalProcedureDescription xsi:type="s:string">Liver Surgery</SurgicalProcedureDescription>
+                            <SurgicalProcedureName xsi:type="s:string">Biopsy</SurgicalProcedureName>
+                            <TissueDescription xsi:type="s:string">Liver Biopsy</TissueDescription>
+<!--
+#                                Change is in Specimen's TissueName:
+-->
+                            <TissueName xsi:type="s:string">Liver22222{timehash}</TissueName>
+                            <FacilityCode xsi:type="s:string">NWMC</FacilityCode>
+                            <FacilityName xsi:type="s:string">Northwest Medical Center</FacilityName>
+                            <ObservationDateTime xsi:type="s:dateTime">2021-03-30T13:04:00Z</ObservationDateTime>
+                        </Specimen>
+                    </StainOrder>
+                </StainOrders>
+                <RegistrationDateTime xsi:type="s:dateTime">2021-03-31T08:34:07Z</RegistrationDateTime>
+            </s01:labOrder>
+
+            <transactionId xsi:type="s:string">{guid}</transactionId>
+
+        </ProcessChangeOrderRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+</SOAP>

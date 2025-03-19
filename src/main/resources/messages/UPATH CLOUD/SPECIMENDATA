@@ -1,0 +1,26 @@
+## SPECIMEN DATA
+
+<SOAP path="/csp/conn/ws.ext.UpathCloud.UpathCloudToVCWebServiceSoap.cls"
+      action="specimenData"
+      apiKeyName="X-NAVIFY-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.virtuoso.ventana.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <specimenData>
+        <allSlideData>
+          <imageUrl>http://hostname:85/88.bif</imageUrl>
+          <slideLabelId>TEST;A;1;1</slideLabelId>
+          <slideViewUrl>http://hostname/virtuoso/slideview</slideViewUrl>
+          <status>RELEASED</status>
+          <thumbnailImage>/9j/4AAQSkZJRgABAQEAYABgAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzUK/9sAQwAIBgYHBgUIBwcHCQkICgwUD</thumbnailImage>
+        </allSlideData>
+        <accessionNumber>TEST</accessionNumber>
+        <specimenNumber>A</specimenNumber>
+        <specimenBarcode>TEST;A</specimenBarcode>
+        <specimenViewUrl>http://hostname/virtuoso/specimenview</specimenViewUrl>
+        <status>RELEASED</status>
+      </specimenData>
+   </soapenv:Body>
+</soapenv:Envelope>
+</SOAP>

@@ -1,0 +1,61 @@
+## PROCESS VANTAGE EVENT
+
+
+## PROCESS CHANGE ORDER REQUEST
+
+<SOAP path="/csp/conn/ws.ext.VANTAGEWS.VANTAGEWSToVCService.cls"
+      action="ProcessVANTAGEEvent"
+      apiKeyName="X-VANTAGE-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+    <SOAP-ENV:Body>
+        <ProcessVANTAGEEvent>
+          <transactionId>{guid}</transactionId>
+          <eventStatus>
+            <Block>
+              <Barcode>TEST;A;1</Barcode>
+              <Sequence>1</Sequence>
+              <TissueSubTypeDescription>TissueSubTypeDescription</TissueSubTypeDescription>
+              <TissueSubTypeName>TissueSubTypeName</TissueSubTypeName>
+            </Block>
+            <CaseId>TEST</CaseId>
+            <EventType>ASSEMBLED</EventType>
+            <ListOfSupplementalInformation/>
+            <ObservationDateTime>2023-11-08T12:52:46.7819607</ObservationDateTime>
+            <Slide>
+              <Barcode>TEST;A;1;1</Barcode>
+              <Sequence>1</Sequence>
+              <SlideComments>Slide test comments</SlideComments>
+              <StainProtocol>
+                <ProtocolDescription/>
+                <ProtocolName>DPdataPrivacyProtocol</ProtocolName>
+                <ProtocolNumber>DP1</ProtocolNumber>
+              </StainProtocol>
+            </Slide>
+            <Specimen>
+              <Barcode>TEST;A</Barcode>
+              <Sequence>A</Sequence>
+              <SurgicalProcedureDescription>SurgicalProcedureDescription</SurgicalProcedureDescription>
+              <SurgicalProcedureName>SurgicalProcedureName</SurgicalProcedureName>
+              <TechConsultId>TechConsultId</TechConsultId>
+              <TissueDescription>TissueDescription</TissueDescription>
+              <TissueDimensionHeight/>
+              <TissueDimensionLength/>
+              <TissueDimensionWeight/>
+              <TissueDimensionWidth/>
+              <TissueName>TissueName</TissueName>
+              <FacilityCode>FacilityCode</FacilityCode>
+              <FacilityName>FacilityName</FacilityName>
+              <ObservationDateTime>2023-11-08T12:52:46.7839258</ObservationDateTime>
+            </Specimen>
+            <Technician>
+              <FirstName>FirstName</FirstName>
+              <LastName>LastName</LastName>
+              <MiddleName>MiddleName</MiddleName>
+              <UserId>UserId</UserId>
+            </Technician>
+          </eventStatus>
+        </ProcessVANTAGEEvent>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+</SOAP>

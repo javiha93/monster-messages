@@ -1,0 +1,41 @@
+## SEND RELEASED
+
+<SOAP path="/csp/conn/ws.ext.UpathCloud.UpathCloudToVCWebServiceSoap.cls"
+      action="sendReleasedSpecimen"
+      apiKeyName="X-NAVIFY-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.virtuoso.ventana.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:sendReleasedSpecimen>
+         <!--Optional:-->
+         <arg0>
+            <!--Zero or more repetitions:-->
+            <allSlideData>
+               <!--Optional:-->
+               <imageUrl>?</imageUrl>
+               <!--Optional:-->
+               <slideLabelId>TEST;A;1;1</slideLabelId>
+               <!--Optional:-->
+               <slideViewUrl>?</slideViewUrl>
+               <!--Optional:-->
+               <status>RELEASED</status>
+               <!--Optional:-->
+               <thumbnailImage>12359087123957612561489046897785475245757903462452951289735127965127896578912634685123412423491290641523761235781234612789056290561804128905789</thumbnailImage>
+            </allSlideData>
+            <!--Optional:-->
+            <accessionNumber>TEST</accessionNumber>
+            <!--Optional:-->
+            <specimenNumber>TEST;A</specimenNumber>
+            <!--Optional:-->
+            <specimenBarcode>TEST;A</specimenBarcode>
+            <!--Optional:-->
+            <specimenViewUrl>?</specimenViewUrl>
+            <!--Optional:-->
+            <status>RELEASED</status>
+         </arg0>
+      </web:sendReleasedSpecimen>
+   </soapenv:Body>
+</soapenv:Envelope>
+</SOAP>
+

@@ -1,0 +1,22 @@
+## RESCAN
+
+<SOAP path="/csp/conn/ws.ext.UpathCloud.UpathCloudToVCWebServiceSoap.cls"
+      action="sendRescanSlide"
+      apiKeyName="X-NAVIFY-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.virtuoso.ventana.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:sendRescanSlide>
+         <accessionNumber>TEST</accessionNumber>
+         <specimenNumber>A</specimenNumber>
+         <blockNumber>1</blockNumber>
+         <slideNumber>1</slideNumber>
+         <slideLabelId>TEST;A;1;1</slideLabelId>
+         <isRescanned>true</isRescanned>
+         <rescanReason>this is the reason of the rescan</rescanReason>
+         <comment>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</comment>
+      </web:sendRescanSlide>
+   </soapenv:Body>
+</soapenv:Envelope>
+</SOAP>

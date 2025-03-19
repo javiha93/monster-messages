@@ -1,0 +1,16 @@
+## SEND UPDATE PATHOLOGIST
+
+<SOAP path="/csp/conn/ws.ext.UpathCloud.UpathCloudToVCWebServiceSoap.cls"
+      action="sendUpdatedAssignedPathologistForCase"
+      apiKeyName="X-NAVIFY-VCONNECT-APIKEY"
+      apiKeyValue="PruebaAPIKey1">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.virtuoso.ventana.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sendUpdatedAssignedPathologistForCase>
+        <arg0>TEST</arg0>
+        <arg1>newPathologistID</arg1>
+      </sendUpdatedAssignedPathologistForCase>
+   </soapenv:Body>
+</soapenv:Envelope>
+</SOAP>
